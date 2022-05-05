@@ -35,7 +35,7 @@ $screen-md-min: 768px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding: 0;
   @include md {
     flex-direction: row;
     padding: 0 77px;
@@ -52,9 +52,40 @@ $screen-md-min: 768px;
     }
   }
   &_content {
-    min-width: 100vw;
-    min-height: 100px;
-    background-color: aqua;
+    padding: 0 23px;
+  }
+  &_content_h1 {
+    font-family: Space Mono;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &_content_p {
+    max-width: 70vw;
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    font-family: Space Mono;
+    display: block;
+    margin: 0 auto 32px;
+  }
+  &_content_button {
+    display: block;
+    margin: 0 auto;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    padding: 24px 42px;
+    background-color: rgb(35, 34, 34);
+    color: white;
+
   }
 }
 .footer {
