@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
 .page {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .header {
   font-family: Inconsolata;
   font-size: 24px;
@@ -17,14 +24,67 @@
   padding-left: 24px;
   padding-top: 20px;
 }
-.main {
-  flex: 1;
-  display: flex;
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 40px;
+    padding-left: 77px;
+  }
 }
-.footer {
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  color: #BDBDBD;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 77px;
+  }
+}
+
+.main_img {
+  padding: 64px 0;
+  max-width: 286.83px;
+  max-height: 238px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main_img {
+    max-width: 539.22px;
+    max-height: 447.43px;
+  }
+}
+
+.main_content {
+  min-width: 100vw;
+  min-height: 100px;
+  background-color: aqua;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #bdbdbd;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
@@ -32,6 +92,6 @@
   letter-spacing: 0em;
   padding-bottom: 24px;
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+/*# sourceMappingURL=style.css.map */
